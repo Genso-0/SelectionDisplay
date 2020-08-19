@@ -207,8 +207,8 @@ public class SelectionIndicatorManager : MonoBehaviour
         }
         //find the min and max of the raster space bounding box
         Vector3 min = boundPoints[0];
-        Vector3 max = boundPoints[0];
-        for (int i = 1; i < boundPoints.Length; i++)
+        Vector3 max = boundPoints[1];
+        for (int i = 0; i < boundPoints.Length; i++)
         {
             Vector3 boundsPoint = boundPoints[i];
             for (int n = 0; n < 3; n++)
